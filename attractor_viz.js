@@ -200,14 +200,14 @@ function bang() {
   head = (head + 1) % TRAIL_LEN;
   if (trailFill < TRAIL_LEN) trailFill++;
   bangCount++;
-  lastBangMs = (new Date()).getTime();
+  lastBangMs = Date.now();
   lastXYZ = [cx, cy, cz];
   mgraphics.redraw();
 }
 
 // ---- fade tick (always-on slow metro) --------------------------------------
 function fade() {
-  var dt = (new Date()).getTime() - lastBangMs;
+  var dt = Date.now() - lastBangMs;
   if (dt > FADE_HOLD_MS + FADE_TAIL_MS + 200) return;
   mgraphics.redraw();
 }
@@ -285,7 +285,7 @@ function paint() {
   var h = box.rect[3] - box.rect[1];
   if (w < 4 || h < 4) return;
 
-  var dt = (new Date()).getTime() - lastBangMs;
+  var dt = Date.now() - lastBangMs;
   var alpha;
   if (dt <= FADE_HOLD_MS)            alpha = 1.0;
   else if (dt < FADE_HOLD_MS + FADE_TAIL_MS) {
