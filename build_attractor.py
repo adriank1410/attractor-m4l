@@ -294,7 +294,7 @@ DIAL_H     = 32       # body + value display, compact enough for the 169-px fram
 LABEL_H    = 14
 MENU_H     = 22
 TOGGLE_H   = 18
-ROW_TITLE  = 4                                         # banner
+ROW_TITLE  = 6                                         # banner — small breathing room above logo
 ROW_HEADER = 22                                        # group headers — right column
 ROW_SUBTL  = 28                                        # subtitle — under the brand accent line
 ROW_TOGGLE = 46                                        # chaos engine row — below subtitle
@@ -358,11 +358,12 @@ def build():
     # Brand accent line directly under "ATTRACTOR" — signature mark anchoring
     # the chaos engine column.
     ACCENT_W = 100
+    ACCENT_Y = ROW_TITLE + 20      # logo's text baseline-ish, sits at logo bottom
     p.add(
         maxclass="panel",
-        patching_rect=[12 + 800, 24, ACCENT_W, 2],
+        patching_rect=[12 + 800, ACCENT_Y, ACCENT_W, 2],
         presentation=1,
-        presentation_rect=[12, 24, ACCENT_W, 2],
+        presentation_rect=[12, ACCENT_Y, ACCENT_W, 2],
         numinlets=1,
         numoutlets=0,
         bgfillcolor_type="color",
