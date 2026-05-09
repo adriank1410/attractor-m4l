@@ -46,14 +46,14 @@
 					"text": "ATTRACTOR",
 					"patching_rect": [
 						812,
-						6,
+						12,
 						140,
 						22
 					],
 					"presentation": 1,
 					"presentation_rect": [
 						12,
-						6,
+						12,
 						140,
 						22
 					],
@@ -76,14 +76,14 @@
 					"maxclass": "ubutton",
 					"patching_rect": [
 						812,
-						6,
+						12,
 						140,
 						22
 					],
 					"presentation": 1,
 					"presentation_rect": [
 						12,
-						6,
+						12,
 						140,
 						22
 					],
@@ -104,7 +104,7 @@
 					"text": "; max launchbrowser https://github.com/adriank1410/attractor-m4l",
 					"patching_rect": [
 						812,
-						36,
+						42,
 						440,
 						22
 					],
@@ -121,14 +121,14 @@
 					"maxclass": "panel",
 					"patching_rect": [
 						812,
-						26,
+						32,
 						100,
 						2
 					],
 					"presentation": 1,
 					"presentation_rect": [
 						12,
-						26,
+						32,
 						100,
 						2
 					],

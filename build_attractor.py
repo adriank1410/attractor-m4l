@@ -294,7 +294,9 @@ DIAL_H     = 32       # body + value display, compact enough for the 169-px fram
 LABEL_H    = 14
 MENU_H     = 22
 TOGGLE_H   = 18
-ROW_TITLE  = 6                                         # banner — small breathing room above logo
+ROW_TITLE  = 12                                        # banner — top padding matches the logo's
+                                                       # left padding (px=12 in the comment widget)
+                                                       # so the wordmark has symmetric corner offset
 ROW_HEADER = 22                                        # group headers — right column
 ROW_SUBTL  = 28                                        # subtitle — under the brand accent line
 ROW_TOGGLE = 46                                        # chaos engine row — below subtitle
